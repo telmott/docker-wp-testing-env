@@ -12,4 +12,8 @@ RUN sh -c 'echo "deb https://dl.google.com/linux/chrome/deb/ stable main" >> /et
 RUN apt-get update
 RUN apt-get install google-chrome-stable -y
 
+# Install git.
+RUN apt-get update
+RUN apt-get apt-get install git -y
+
 CMD ["bash"]
