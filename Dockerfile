@@ -3,6 +3,8 @@ MAINTAINER Telmo Teixeira <hi@telmoteixeira.com>
 
 # Install grunt-cli.
 RUN npm i -g grunt-cli
+
+# Install wget.
 RUN apt-get update
 RUN apt-get install wget -y
 
@@ -14,6 +16,6 @@ RUN apt-get install google-chrome-stable -y
 
 # Install git.
 RUN apt-get update
-RUN apt-get apt-get install git -y
+RUN apt-get install git -y
 
 CMD ["bash"]
